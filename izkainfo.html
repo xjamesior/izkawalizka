@@ -1,0 +1,631 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  
+  <style>
+  body {
+  background: black;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  cursor: url(http://profilki.pl/files/cur/843.png
+  }
+  h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: .8vw;
+  color: rgba(165, 141, 141, .4);
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  text-align: center;
+  left: 17%;
+}
+  h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.4vw;
+  color: rgb(223, 191, 191);
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  text-align: center;
+  left: 17%;
+  
+  
+  }
+.glitch {
+  color: rgb(223, 191, 191);
+  position: relative;
+  font-size: 9vw;
+  // margin: 70px 200px;
+  animation: glitch 5s 5s infinite;
+  }
+  .subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: .8vw;
+  color: rgba(165, 141, 141, .4);
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  animation: glitch-2 5s 5.02s infinite;
+  }
+  .glow {
+  @extend .glitch;
+  text-shadow: 0 0 1000px rgb(223, 191, 191);
+  color: transparent;
+  position: absolute;
+  top: 0;
+}
+.gallery {
+  width: 1000px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.gallery__photo {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+
+  position: absolute;
+  transition: all 0.2s;
+  z-index: 10;
+  outline-offset: 20px;
+}
+
+.gallery__photo--p1 {
+  top: 0;
+  left: 0;
+}
+
+.gallery__photo--p2 {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.gallery__photo--p3 {
+  top: 40px;
+  left: 20%;
+}
+
+.gallery__photo--p4 {
+  top: 60px;
+  left: 40%;
+}
+
+.gallery__photo--p5 {
+  top: 40px;
+  left: 60%;
+  z-index: 2;
+}
+
+.gallery__photo:hover {
+  outline: 15px solid #dfbfbf;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05) translateY(-20px);
+  z-index: 20;
+}
+.gallery:hover .gallery__photo:not(:hover) {
+  transform: scale(0.9);
+}
+
+.container-audio {
+    width: 66%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+audio {
+  width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+.container-audio .colum1:last-child {
+    margin: 0;
+}
+.container-audio .colum1 .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to up, #7700aa, #8800ff);
+    position: absolute;
+    -webkit-animation: Rofa 10s infinite ease-in-out;
+    animation: Rofa 10s infinite ease-in-out;
+    bottom: 0;
+}
+.container-audio .colum1:nth-of-type(1) .row {
+    -webkit-animation-delay: 3.99s;
+    animation-delay: 3.99s;
+}
+.container-audio .colum1:nth-of-type(2) .row {
+    -webkit-animation-delay: 3.80s;
+    animation-delay: 3.80s;
+}
+.container-audio .colum1:nth-of-type(3) .row {
+    -webkit-animation-delay: 3.70s;
+    animation-delay: 3.70s;
+}
+.container-audio .colum1:nth-of-type(4) .row {
+    -webkit-animation-delay: 3.60s;
+    animation-delay: 3.60s;
+}
+.container-audio .colum1:nth-of-type(5) .row {
+    -webkit-animation-delay: 3.50s;
+    animation-delay: 3.50s;
+}
+.container-audio .colum1:nth-of-type(6) .row {
+    -webkit-animation-delay: 3.40s;
+    animation-delay: 3.40s;
+}
+.container-audio .colum1:nth-of-type(7) .row {
+    -webkit-animation-delay: 3.30s;
+    animation-delay: 3.30s;
+}
+.container-audio .colum1:nth-of-type(8) .row {
+    -webkit-animation-delay: 3.20s;
+    animation-delay: 3.20s;
+}
+.container-audio .colum1:nth-of-type(9) .row {
+    -webkit-animation-delay: 3.10s;
+    animation-delay: 3.10s;
+}
+.container-audio .colum1:nth-of-type(10) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(11) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(12) .row {
+    -webkit-animation-delay: 2.10s;
+    animation-delay: 2.10s;
+}
+.container-audio .colum1:nth-of-type(13) .row {
+    -webkit-animation-delay: 2.20s;
+    animation-delay: 2.20s;
+}
+.container-audio .colum1:nth-of-type(14) .row {
+    -webkit-animation-delay: 1.30s;
+    animation-delay: 1.30s;
+}
+.container-audio .colum1:nth-of-type(15) .row {
+    -webkit-animation-delay: 1.40s;
+    animation-delay: 1.40s;
+}
+.container-audio .colum1:nth-of-type(16) .row {
+    -webkit-animation-delay: 1.50s;
+    animation-delay: 1.50s;
+}
+.container-audio .colum1:nth-of-type(17) .row {
+    -webkit-animation-delay: 1.60s;
+    animation-delay: 1.60s;
+}
+.container-audio .colum1:nth-of-type(18) .row {
+    -webkit-animation-delay: 1.70s;
+    animation-delay: 1.70s;
+}
+.container-audio .colum1:nth-of-type(19) .row {
+    -webkit-animation-delay: 1.80s;
+    animation-delay: 1.80s;
+}
+.container-audio .colum1:nth-of-type(20) .row {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes Rofa {
+    0% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: yellow;
+    }
+
+    5% {
+        height: 100%;
+        -webkit-transform: translatey(15px);
+        transform: translatey(15px);
+        background-color: fuchsia;
+    }
+    10% {
+        height: 90%;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+        background-color: bisque;
+    }
+
+    15% {
+        height: 80%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    20% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    25% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    30% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    35% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    40% {
+        height: 60%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    45% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    50% {
+        height: 50%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    55% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    60% {
+        height: 40%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    65% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    70% {
+        height: 30%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    75% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    80% {
+        height: 20%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    85% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    90% {
+        height: 10%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    95% {
+        height: 5%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    100% {
+        height: 0;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+}
+.wave {
+  float: left;
+  margin: 20px;
+  animation: wave  ease-in-out 1.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave img {
+  border: 5px solid #f8f8f8;
+  display: block;
+  width: 200px;
+  height: 250px;
+}
+
+.wave figcaption {
+  text-align: center;
+}
+
+.wave:after{
+  content: '';
+  position: absolute;
+  width: 20px; 
+  height: 20px;
+  border: 1.5px solid #ffffff;
+  top: -10px; 
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+       
+.wave:before{
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+        
+@keyframes wave {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+  </style>
+  <title></title>
+  </head>
+  <body>
+
+<a align='center'><div class="glitch" data-text="IZABELA">IZABELA</div>
+  <div class="glow">IZABELA</div></a>
+  <a align='center' class="subtitle">KISIO - SKORUPA</p>
+  </div></a>
+  
+  <br><br>
+  
+<a> <div class="gallery">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMDGIkss9VANGSKSaoTMxIwR0zPAwZIQOFQ&usqp=CAU"
+        class="gallery__photo gallery__photo--p1"
+        alt=""
+      />
+      <img
+        src="izabella1.jpg"
+        class="gallery__photo gallery__photo--p2"
+        alt=""
+      />
+      <img
+        src="https://samequizy.pl/wp-content/uploads/2018/12/filing_images_f3df91b011de.jpg"
+        class="gallery__photo gallery__photo--p3"
+        alt=""
+      />
+      <img
+        src="https://cdn.galleries.smcloud.net/t/galleries/gf-PBce-1EHs-UbH1_izabela-kisio-skorupa-na-floating-arenie-w-szczecinie-664x442-nocrop.png"
+        class="gallery__photo gallery__photo--p4"
+        alt=""
+      />
+      <img
+      src="https://s-trojmiasto.pl/zdj/c/n/3/1829/241x340/1829343__c_262_0_380_502__kr.jpg"
+      class="gallery__photo gallery__photo--p5"
+      alt=""
+    />
+    </div></a>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div><hr></div>
+    
+    <h2>Puść sobie piosenkę</h2>
+    <div class="container-audio">
+        <audio controls  loop autoplay>
+                   <source src="piosenka.m4a" type="audio/ogg">
+                   Your browser dose not Support the audio Tag
+               </audio>
+    </div>
+    <div class="container-audio">
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+        <div class="colum1">
+            <div class="row"></div>
+        </div>
+    </div>
+    <hr>
+    <table>
+    <tr>
+    <td><font size=5 color="white"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Izabela_Kisio_-_Skorupa.jpeg" alt="izamatematyczka.jpg" title="Izunia Matematyczka" height="320" width="273"></font</td>
+    <td>
+    <p style="font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  font-size: .8vw;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  left: 17%;" align="justify">Izabela Jadwiga Kisio-Skorupa to polska osobowosc medialna, bizneswoman, piosenkarka, aktorka, producent klockow hamulcowych i byla zawodniczka MMA. Polaryzujaca i czesto wyszydzana celebrytka, jest matka aktorki Aleksandry Kisio i zostala okrzyknieta "najbardziej znana matka polskiego show-biznesu". Prowadzi rowniez swoj wlasny uniwersytet pod nazwa "Uniwersytet im. Izabeli Jadwigi Kisio Skorupy I".
+    </p>
+    <p align="center"><a href=https://www.facebook.com/uniwerekizabelikisioskorupy>Uniwersytet im. Izabeli Jadwigi Kisio Skorupy I</a></p>
+    </td>
+    </tr>
+</table>
+<hr>
+<h2>KLIPY MUZYCZNE</h2>
+<p align="center"><table>
+    <tr>
+    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Ek-9aSwlY0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JPuCkZuTcWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/l0hUP8htGwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+</table></p>
+<hr>
+<h2>LEKTURY IZABELI</h2>
+<div style="margin-top: 20px;">
+
+  <figure class="wave">
+    <img src="Filmowaiza-1.jpg" alt="rajni"></img>
+    
+  </figure>
+
+  <figure class="wave">
+    <img src="Filmowaiza-2.jpg" alt="chuck"></img>
+    
+  </figure>
+
+  <figure class="wave">
+    <img src="Filmowaiza-3.jpg" alt="chan"></img>
+    
+  </figure>
+
+  <figure class="wave">
+    <img src="Filmowaiza-4.jpg" alt="bean"></img>
+    
+  </figure>
+  
+  <figure class="wave">
+    <img src="Filmowaiza-5.jpg" alt="rajni"></img>
+    
+  </figure>
+
+  <figure class="wave">
+    <img src="Filmowaiza-1.jpg" alt="chuck"></img>
+    
+  </figure>
+
+  <figure class="wave">
+    <img src="Filmowaiza-2.jpg" alt="chan"></img>
+    
+  </figure>
+</div>
+
+
+
+<script data-scatter="1.7" data-initscatter="6" data-elemsize="27" data-countelems="6" data-fallingspeed="10" data-lifespan="1.7" data-initopac="0.8" data-shapetype="custom" data-rotation="7" data-startrotated="0" data-colortype="rainbow" data-glow="100" data-glitter="10" data-elementsobj-i1="<3" data-elementsobj-i2=":3" data-elementsobj-i3=":)" data-elementsobj-i4="(:" data-elementsobj-i5="IZABELA" data-elementsobj-i6="KOCHAMY" data-elementsobj-i7="CIĘ" data-charsorder="0" data-sat="40" data-light="49" data-rainbowvar="2" src="http://profilki.pl/scr/cursoreffect.js"></script>
+<script data-style="drawn" data-speed="1400" data-position="lb" data-size="63" data-arrowtype="ar1" data-color="rgb(255,255,255)" src="http://profilki.pl/scr/uparrow.js"></script>
+<script data-id="843" data-x="0" data-y="0" src="http://profilki.pl/scr/cursor.js"></script>
+<b id="input_niekopiuj">NIE KOPIUJ</b><b id="sound_niekopiuj">bzzz.ogg</b><script src="http://profilki.pl/kody/niekopiuj.js"></script>
+
+  </body>
+</html>
